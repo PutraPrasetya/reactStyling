@@ -30,6 +30,7 @@ import styles from "./CourseInput.module.css";
 //   border-color: #8b005d;
 // }
 // `;
+//test
 
 const CourseInput = (props) => {
   const [enteredValue, setEnteredValue] = useState("");
@@ -60,7 +61,7 @@ const CourseInput = (props) => {
   return (
     <form onSubmit={formSubmitHandler}>
       <div className={`${styles['form-control']} ${!isValid && styles.invalid}`}>
-        <label >Course Goal</label>
+        <label >Course Goals</label>
         <input type="text" onChange={goalInputChangeHandler}/>
       </div>
       <Button type="submit">Add Goal</Button>
